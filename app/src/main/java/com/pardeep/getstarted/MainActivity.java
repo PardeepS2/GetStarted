@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     // Declare our view variables
@@ -24,7 +26,12 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener listner = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fact = "ostriches are run faster then horses.";
+                // The button was clicked and we will get a new fact.
+
+                String fact = "";
+                // Randomly generated new fact.
+                Random rnd = new Random();
+                
                 mTextView.setText(fact);
             }
         };
