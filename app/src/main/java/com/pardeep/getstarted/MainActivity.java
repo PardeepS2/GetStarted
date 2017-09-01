@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 String fact = "";
                 // Randomly generated new fact.
                 Random rnd = new Random();
-                
+                int rndnumber = rnd.nextInt(3);
+                fact = rndnumber + "";
                 mTextView.setText(fact);
             }
         };
